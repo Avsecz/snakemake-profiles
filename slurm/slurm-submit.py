@@ -90,10 +90,10 @@ if "resources" in job_properties:
             arg_dict["mem"] = resources["mem"]
         elif "mem_mb" in resources:
             arg_dict["mem"] = resources["mem_mb"]
-    if arg_dict["gpu"] is None:
-        if "gpu" in resources:
-            # add gpu resources
-            arg_dict["gres"] = "gpu:{}".format(resources["gpu"])
+    if "gpu" in resources:
+        # add gpu resources
+        arg_dict["gres"] = "gpu:{}".format(resources["gpu"])
+
 # Threads
 if "threads" in job_properties:
     # That's super confusing -> number of tasks to run
