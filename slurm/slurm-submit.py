@@ -101,7 +101,7 @@ if "threads" in job_properties:
 
 
 opt_keys = ["array", "account", "begin", "cpus_per_task",
-            "depedency", "workdir", "error", "job-name", "mail_type",
+            "dependency", "workdir", "error", "job-name", "mail_type",
             "mail_user", "ntasks", "nodes", "output", "partition",
             "cpus-per-task", "gres",  # added keys
             "quiet", "time", "wrap", "constraint", "mem"]
